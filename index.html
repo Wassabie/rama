@@ -3,145 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portofolio</title>
-    <!--Animated AOS-->
+    <title>My Portfolio</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!--Untuk google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+JP:wght@100..900&display=swap"
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!--boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--M style-->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Noto Sans JP', sans-serif;
+      }
+      .madimi {
+        font-family: 'Madimi One', cursive;
+      }
+      .roboto {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
   </head>
-<body>
-    <nav class="nav animate__animated animate__fadeInDown">
-        <div class="wrapper1">
-          <div class="logo"><a href="">My Portofolio</a></div>
-          <div class="menu">
-            <ul>
-              <li><a href="#About me">About me</a></li>
-              <li><a href="#Skills">Skills</a></li>
-              <li><a href="#Project">Project</a></li>
-              <li><a href="#SosialMedia">Sosial Media</a></li>
-            </ul>
-          </div>
+  <body class="bg-black text-white">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-10 bg-gray-400 border-b-2 border-[#265073] shadow-md px-4">
+      <div class="flex items-center justify-between h-20">
+        <div class="text-3xl font-bold font-['Noto_Sans_JP'] text-white">
+          <a href="#">My Portofolio</a>
         </div>
-      </nav>
-
-      <!-- Untuk About me -->
-      <section class="hero" id="About me">
-        <main class="content">
-          <h1>HI IT'S ME<span> NOVAL RAID RAMADHAN</span></h1>
-          <p>
-            I am a Gunadarama student who has several skills such as HTML, CSS, Adobe Premiere, and Photoshop. I have ambitions to practice other programming languages
-          </p>
-        </main>
-        <div class="foto">
-        <img src="rama.jpeg" alt="foto" style="width: 350px; margin-right: 100px;">
-    </div>
-      </section>
-
-      <!-- Untuk Skills -->
-      <div class="all">
-      <section class="hero1" id="Skills">   
-        <main class="content1">
-          <div class="text">
-            MY SKILLS
-          </div>
-        </main>
-      </section>
-      <div class="image">
-        
-        <div data-aos="fade-up"
-        data-aos-duration="1000" class="photoshop">
-        <img src="photoshop.png" alt="photoshop" style="border-radius: 50px;">
+        <ul class="flex space-x-4 text-[#535C91] font-bold font-['Madimi_One']">
+          <li><a href="#About me" class="hover:underline">About me</a></li>
+          <li><a href="#Skills" class="hover:underline">Skills</a></li>
+          <li><a href="#Project" class="hover:underline">Project</a></li>
+          <li><a href="#SosialMedia" class="hover:underline">Sosial Media</a></li>
+        </ul>
       </div>
+    </nav>
+    
 
-      <div data-aos="fade-up"
-      data-aos-duration="1000" class="premiere">
-        <img src="premiere.png" alt="photoshop" style="border-radius: 50px;">
+    <!-- About Me Section -->
+    <section id="about-me" class="h-screen flex flex-col md:flex-row items-center justify-around bg-cover bg-center px-10 py-20" style="background-image: url('tokyo night.jpg');">
+      <div class="max-w-xl">
+        <h1 class="text-5xl md:text-6xl font-bold text-white drop-shadow-xl">
+          HI IT'S ME <span class="text-yellow-300 roboto italic">NOVAL RAID RAMADHAN</span>
+        </h1>
+        <p class="mt-6 text-lg text-white mix-blend-difference drop-shadow-lg">
+          I am a Gunadarma student who has several skills such as HTML, CSS, Adobe Premiere, and Photoshop. I have ambitions to practice other programming languages.
+        </p>
       </div>
+      <div class="mt-10 md:mt-0 pr-10">
+        <img src="rama.jpeg" alt="foto" class="w-[350px] rounded-lg shadow-xl" />
+      </div>
+           
+    </section>
 
-      <div data-aos="fade-up"
-      data-aos-duration="1000" class="html">
-        <img src="html dan css.png" alt="photoshop" style="border-radius: 50px;">
-      </div>
-      </div>
-    </div>
-   
-    <!-- projek -->
+    <!-- Tambahkan bagian lainnya di sini (Skills, Project, Sosial Media, Footer) -->
 
-    <div class="projek">
-      <section class="hero1" id="Project">   
-        <main class="content1">
-          <div class="text">
-            MY PROJECT
-          </div>
-        </main>
-      </section>
-
-      <div class="img-project">
-        <div data-aos="fade-up"
-        data-aos-duration="1000" class="coffee">
-        <img src="coffee.png" alt="photoshop" style="border-radius: 35px; width: 400px;">
-        <div class="custom-text">
-        <p>This is my practice project to create a front view section on a coffee website </p>
-        </div>
-      </div>
-
-      <div data-aos="fade-up"
-      data-aos-duration="1000" class="motor">
-        <img src="showcase-motor.png" alt="photoshop" style="border-radius: 35px; width: 400px;">
-        <div class="custom-text">
-          <p>This is a project that I am working on with my friend to create a website for buying motorbikes </p>
-          </div>
-      </div>
-
-      <div data-aos="fade-up"
-      data-aos-duration="1000" class="anime">
-        <img src="anime.png" alt="photoshop" style="border-radius: 35px; width: 400px;">
-        <div class="custom-text">
-          <p>This is my first project in creating a website</p>
-          </div>
-      </div>
-      </div>
+<section id="Skills" class="min-h-screen flex flex-col items-center justify-center py-16">
+  <h2 class="text-4xl text-white font-bold mb-10 font-['Madimi_One']">MY SKILLS</h2>
+  <div class="flex flex-wrap justify-center gap-10" data-aos="fade-up" data-aos-duration="1000">
+    <img src="photoshop.png" alt="Photoshop" class="rounded-[50px] w-40 h-40 object-contain" />
+    <img src="premiere.png" alt="Premiere" class="rounded-[50px] w-40 h-40 object-contain" />
+    <img src="html dan css.png" alt="HTML & CSS" class="rounded-[50px] w-40 h-40 object-contain" />
+  </div>
+</section>
+    
+<section id="Project" class="min-h-screen flex flex-col items-center justify-center py-16">
+  <h2 class="text-4xl text-white font-bold mb-10 font-['Madimi_One']">MY PROJECT</h2>
+  <div class="flex flex-wrap justify-center gap-10">
+    
+    <!-- Coffee Project -->
+    <div data-aos="fade-up" data-aos-duration="1000" class="bg-black rounded-[55px] border-l-[10px] border-r-[10px] border-gray-600 border-b-[10px] border-b-red-900 p-4 max-w-sm">
+      <img src="coffee.png" alt="Coffee Project" class="rounded-[35px] w-full" />
+      <p class="text-white text-center mt-4 text-xl italic font-['Madimi_One']">This is my practice project to create a front view section on a coffee website</p>
     </div>
 
-    <!-- Sosial media -->
+    <!-- Motor Project -->
+    <div data-aos="fade-up" data-aos-duration="1000" class="bg-black rounded-[55px] border-l-[10px] border-r-[10px] border-gray-600 border-b-[10px] border-b-red-900 p-4 max-w-sm">
+      <img src="showcase-motor.png" alt="Motor Project" class="rounded-[35px] w-full" />
+      <p class="text-white text-center mt-4 text-xl italic font-['Madimi_One']">This is a project that I am working on with my friend to create a website for buying motorbikes</p>
+    </div>
 
-    <div class="sosial-media">
-      <section class="hero1" id="SosialMedia">   
-        <main class="content2">
-          <div class="text">
-            MY SOSIAL MEDIA
-          </div>
-        </main>
-      </section>
-      <div data-aos="zoom-in" data-aos-duration="1000" class="img-instagram">
-        <a href="https://www.instagram.com/novalr0_/" class="ref">
-      <img src="instagram.jpg" alt="instagram" style="border-radius: 50%; width: 100PX;">
+    <!-- Anime Project -->
+    <div data-aos="fade-up" data-aos-duration="1000" class="bg-black rounded-[55px] border-l-[10px] border-r-[10px] border-gray-600 border-b-[10px] border-b-red-900 p-4 max-w-sm">
+      <img src="anime.png" alt="Anime Project" class="rounded-[35px] w-full" />
+      <p class="text-white text-center mt-4 text-xl italic font-['Madimi_One']">This is my first project in creating a website</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="SosialMedia" class="min-h-[50vh] flex flex-col items-center justify-center py-16">
+  <h2 class="text-4xl text-white font-bold mb-10 font-['Madimi_One']">MY SOSIAL MEDIA</h2>
+  <div data-aos="zoom-in" data-aos-duration="1000" class="flex justify-center">
+    <a href="https://www.instagram.com/novalr0_/" target="_blank">
+      <img src="instagram.jpg" alt="Instagram" class="rounded-full w-[100px] hover:scale-110 transition-transform duration-300" />
     </a>
-    </div>
-    </div>
+  </div>
+</section>
 
-<!-- Script -->
-    <script src="chart.js"></script>
-    <script>
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    
+
+
+    <!-- AOS & Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-</body>
+  </body>
 </html>
